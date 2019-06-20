@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: myimage
+spec:
+  rules:
+  - host: ing.sysadm.kz
+    http:
+      paths:
+        - backend:
+            serviceName: myimage
+            servicePort: 80
