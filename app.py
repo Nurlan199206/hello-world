@@ -7,11 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-<<<<<<< HEAD
-    html = "<h3>Hello, World v1.0!</h3>"
-=======
-    html = "<h3>Hello, World v.0!</h3>"
->>>>>>> 3c6ee8ca7979629faacd72e80e7e8a996a78923f
+    html = "<h3>Hello, World v3.0.0!</h3>"
     return html
 
 if __name__ == "__main__":
