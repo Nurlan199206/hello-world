@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: myimage
-        image: nurlan1992/hello-world:v3.0
+        image: nurlan1992/hello-world:v2.0
         ports:
         - containerPort: 80
 ---
