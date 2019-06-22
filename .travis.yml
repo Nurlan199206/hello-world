@@ -10,8 +10,8 @@ before_install:
 
 
 script:
-  - 'make test'
-  - 'make image'
+  - if [ $TRAVIS_BRANCH = "master" ]; then docker ps -a; fi
+
   
 # don't notify me when things fail
 notifications:
