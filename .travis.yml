@@ -5,3 +5,6 @@ services:
 
 before_install:
 - docker build -t nurlan1992/hello-world:v1.0 .
+
+script:
+  - bundle exec rake test
