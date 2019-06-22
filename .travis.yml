@@ -4,4 +4,4 @@ services:
   - docker
 
 before_install:
-- docker build -t nurlan199206/hello-world .
+- docker build -t nurlan1992/hello-world:v1.0 .
