@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-- docker build -t nurlan1992/hello-world:v3.0 --build-arg version=2.0 .
+- docker build -t nurlan1992/hello-world:v2.0 --build-arg version=2.0 .
 - docker login -u $DOCKER_USER -p $DOCKER_PASS
 - docker push nurlan1992/hello-world
 
