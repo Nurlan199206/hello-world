@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myimage
+  labels:
+    app: myimage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myimage
+  template:
+    metadata:
+      labels:
+        app: myimage
+    spec:
+      containers:
+      - name: myimage
+        image: nurlan1992/hello-world:v2.0
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: myimage
+  namespace: default
+spec:
+  selector:
+    app: myimage
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 32444
