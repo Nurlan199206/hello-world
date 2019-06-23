@@ -10,5 +10,3 @@ build-master:
   script:
     - docker build --pull -t nurlan1992/hello-world:v4.0 .
     - docker push nurlan1992/hello-world
-  only:
-    - master
