@@ -10,5 +10,7 @@ RUN pip install -r requirements.txt
 # Open port 80 for serving the webpage
 EXPOSE 80
 
+USER newuser
+
 # Run app.py when the container launches
 CMD ["python", "app.py"]
